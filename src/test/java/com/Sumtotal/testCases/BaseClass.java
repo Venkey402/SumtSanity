@@ -2,15 +2,12 @@ package com.Sumtotal.testCases;
 
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
-
 import com.Sumtotal.Utilities.ReadConfig;
-
 import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.concurrent.TimeUnit;
-
 import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
@@ -22,7 +19,6 @@ import org.testng.annotations.AfterClass;
 
 public class BaseClass 
 {	
-	
 	ReadConfig rc = new ReadConfig();
 	String baseUrl = rc.getBaseUrl();
 	String Username = rc.getUsername();

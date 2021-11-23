@@ -5,7 +5,8 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 
-public class ReadConfig{
+public class ReadConfig
+{
 	Properties pro;
 	FileInputStream src;
 
