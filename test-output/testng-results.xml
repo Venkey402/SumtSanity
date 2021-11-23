@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-11-23T21:41:28 IST" name="Sumtoal" finished-at="2021-11-23T21:42:23 IST" duration-ms="55584">
+    <groups>
+    </groups>
+    <test started-at="2021-11-23T21:41:28 IST" name="Sanity" finished-at="2021-11-23T21:42:23 IST" duration-ms="55584">
+      <class name="com.Sumtotal.testCases.TC_Login_001">
+        <test-method is-config="true" signature="SetUp(java.lang.String)[pri:0, instance:com.Sumtotal.testCases.TC_Login_001@7c24b813]" started-at="2021-11-23T21:41:28 IST" name="SetUp" finished-at="2021-11-23T21:41:54 IST" duration-ms="26660" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method signature="ValidateLogin()[pri:0, instance:com.Sumtotal.testCases.TC_Login_001@7c24b813]" started-at="2021-11-23T21:41:54 IST" name="ValidateLogin" finished-at="2021-11-23T21:42:18 IST" duration-ms="23779" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateLogin -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:com.Sumtotal.testCases.TC_Login_001@7c24b813]" started-at="2021-11-23T21:42:18 IST" name="TearDown" finished-at="2021-11-23T21:42:23 IST" duration-ms="5110" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- com.Sumtotal.testCases.TC_Login_001 -->
+    </test> <!-- Sanity -->
+  </suite> <!-- Sumtoal -->
+</testng-results>
