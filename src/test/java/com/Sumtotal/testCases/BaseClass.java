@@ -46,11 +46,14 @@ public class BaseClass
 		  driver = new ChromeDriver();
 		  logger.info(CurrentTime()+" Initiated the "+ browser+" browser...");
 	  }
-	  
+	  driver.manage().window().maximize();
+	  logger.info(CurrentTime()+" Window maximized...");
+	  driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+	  logger.info(CurrentTime()+" Set the implicit wait to 20 secs ...");	
+	  driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
+	  logger.info(CurrentTime()+" Set the Page load time out to 20 secs ...");	
 	  driver.get(baseUrl);
 	  logger.info(CurrentTime()+" Opened the "+baseUrl+" in the browser...");
-	  driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-	  logger.info(CurrentTime()+" Set the implicit wait to 30 secs ...");	  
   }
 
   @AfterClass
