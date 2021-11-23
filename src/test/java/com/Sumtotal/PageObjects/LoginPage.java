@@ -17,13 +17,13 @@ public class LoginPage {
 	}
 	
 	@FindBy(how=How.ID,using="BodyContent_MainContent_MainContentPlaceHolder_UserName")
-	WebElement txtUsername;
+	public WebElement txtUsername;
 	
 	@FindBy(how=How.ID,using="BodyContent_MainContent_MainContentPlaceHolder_Password")
-	WebElement txtPassword;
+	public WebElement txtPassword;
 	
 	@FindBy(how=How.ID,using="BodyContent_MainContent_MainContentPlaceHolder_LoginButton")
-	WebElement btnSignIn;
+	public WebElement btnSignIn;
 	
 	
 	public void setUsername(String username)

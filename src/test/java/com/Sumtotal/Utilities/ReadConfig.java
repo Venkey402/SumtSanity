@@ -38,5 +38,4 @@ public class ReadConfig{
 	{
 		return pro.getProperty("Password");
 	}
-
 }

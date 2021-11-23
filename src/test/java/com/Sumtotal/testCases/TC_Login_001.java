@@ -26,9 +26,9 @@ public class TC_Login_001 extends BaseClass{
 		  logger.info(CurrentTime()+" Page title is correct...");
 	  }
 	  else
-	  {	 
-		  TakeScreenshot();
+	  {	 		  
 		  logger.info(CurrentTime()+" Page title is not correct...");
+		  TakeScreenshot();
 		  Assert.assertTrue(false);
 	  }
   }

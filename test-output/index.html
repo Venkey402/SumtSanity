@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 5 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Sumtoal" class="navigator-link">
-              <span class="suite-name border-passed">Sumtoal</span>
+              <span class="suite-name border-failed">Sumtoal</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,21 +93,41 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">5 methods, 5 failed,   </span>
                   </li>
                   <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Sumtoal" class="hide-methods passed suite-Sumtoal"> (hide)</a> <!-- hide-methods passed suite-Sumtoal -->
-                      <a href="#" panel-name="suite-Sumtoal" class="show-methods passed suite-Sumtoal"> (show)</a> <!-- show-methods passed suite-Sumtoal -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Sumtoal" class="hide-methods failed suite-Sumtoal"> (hide)</a> <!-- hide-methods failed suite-Sumtoal -->
+                      <a href="#" panel-name="suite-Sumtoal" class="show-methods failed suite-Sumtoal"> (show)</a> <!-- show-methods failed suite-Sumtoal -->
                     </span>
-                    <div class="method-list-content passed suite-Sumtoal">
+                    <div class="method-list-content failed suite-Sumtoal">
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Sumtoal" title="com.Sumtotal.testCases.TC_Login_001" class="method navigator-link" hash-for-method="ValidateLogin">ValidateLogin</a> <!-- method navigator-link -->
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Sumtoal" title="com.Sumtotal.testCases.TC_Login_DataDriven_002" class="method navigator-link" hash-for-method="loginDD(null, null)">loginDD(null, null)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Sumtoal -->
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Sumtoal" title="com.Sumtotal.testCases.TC_Login_DataDriven_002" class="method navigator-link" hash-for-method="loginDD(User4, p)">loginDD(User4, p)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Sumtoal" title="com.Sumtotal.testCases.TC_Login_DataDriven_002" class="method navigator-link" hash-for-method="loginDD(User2, p)">loginDD(User2, p)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Sumtoal" title="com.Sumtotal.testCases.TC_Login_DataDriven_002" class="method navigator-link" hash-for-method="loginDD(User1, p)">loginDD(User1, p)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Sumtoal" title="com.Sumtotal.testCases.TC_Login_DataDriven_002" class="method navigator-link" hash-for-method="loginDD(User3, p)">loginDD(User3, p)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Sumtoal -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -119,21 +139,83 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Sumtoal" class="panel Sumtoal">
-          <div class="suite-Sumtoal-class-passed">
+          <div class="suite-Sumtoal-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.Sumtotal.testCases.TC_Login_001</span>
+              <img src="failed.png"/>
+              <span class="class-name">com.Sumtotal.testCases.TC_Login_DataDriven_002</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="ValidateLogin">
-                  </a> <!-- ValidateLogin -->
-                  <span class="method-name">ValidateLogin</span>
+                  <a name="loginDD(null, null)">
+                  </a> <!-- loginDD(null, null) -->
+                  <span class="method-name">loginDD</span>
+                  <span class="parameters">(null, null)</span>
+                  <div class="stack-trace">java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:97)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy14.sendKeys(Unknown Source)
+	at com.Sumtotal.PageObjects.LoginPage.setUsername(LoginPage.java:31)
+	at com.Sumtotal.testCases.TC_Login_DataDriven_002.loginDD(TC_Login_DataDriven_002.java:24)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginDD(User4, p)">
+                  </a> <!-- loginDD(User4, p) -->
+                  <span class="method-name">loginDD</span>
+                  <span class="parameters">(User4, p)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at com.Sumtotal.testCases.TC_Login_DataDriven_002.loginDD(TC_Login_DataDriven_002.java:43)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginDD(User2, p)">
+                  </a> <!-- loginDD(User2, p) -->
+                  <span class="method-name">loginDD</span>
+                  <span class="parameters">(User2, p)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at com.Sumtotal.testCases.TC_Login_DataDriven_002.loginDD(TC_Login_DataDriven_002.java:43)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginDD(User1, p)">
+                  </a> <!-- loginDD(User1, p) -->
+                  <span class="method-name">loginDD</span>
+                  <span class="parameters">(User1, p)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at com.Sumtotal.testCases.TC_Login_DataDriven_002.loginDD(TC_Login_DataDriven_002.java:43)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginDD(User3, p)">
+                  </a> <!-- loginDD(User3, p) -->
+                  <span class="method-name">loginDD</span>
+                  <span class="parameters">(User3, p)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at com.Sumtotal.testCases.TC_Login_DataDriven_002.loginDD(TC_Login_DataDriven_002.java:43)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Sumtoal-class-passed -->
+          </div> <!-- suite-Sumtoal-class-failed -->
         </div> <!-- panel Sumtoal -->
         <div panel-name="test-xml-Sumtoal" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -147,7 +229,7 @@
   &lt;test thread-count=&quot;5&quot; name=&quot;Sanity&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.Sumtotal.testCases.TC_Login_001&quot;/&gt;
+      &lt;class name=&quot;com.Sumtotal.testCases.TC_Login_DataDriven_002&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Sanity --&gt;
 &lt;/suite&gt; &lt;!-- Sumtoal --&gt;
@@ -187,16 +269,32 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(5);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'ValidateLogin')
-data.setCell(0, 2, 'com.Sumtotal.testCases.TC_Login_001')
-data.setCell(0, 3, 23779);
+data.setCell(0, 1, 'loginDD')
+data.setCell(0, 2, 'com.Sumtotal.testCases.TC_Login_DataDriven_002')
+data.setCell(0, 3, 8557);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'loginDD')
+data.setCell(1, 2, 'com.Sumtotal.testCases.TC_Login_DataDriven_002')
+data.setCell(1, 3, 1526);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'loginDD')
+data.setCell(2, 2, 'com.Sumtotal.testCases.TC_Login_DataDriven_002')
+data.setCell(2, 3, 786);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'loginDD')
+data.setCell(3, 2, 'com.Sumtotal.testCases.TC_Login_DataDriven_002')
+data.setCell(3, 3, 746);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'loginDD')
+data.setCell(4, 2, 'com.Sumtotal.testCases.TC_Login_DataDriven_002')
+data.setCell(4, 3, 718);
 window.suiteTableData['Sumtoal']= { tableData: data, tableDiv: 'times-div-Sumtoal'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 23 seconds</span>
+              <span class="suite-total-time">Total running time: 12 seconds</span>
               <div id="times-div-Sumtoal">
               </div> <!-- times-div-Sumtoal -->
             </div> <!-- times-div -->
@@ -222,18 +320,44 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.Sumtotal.testCases.TC_Login_001</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.Sumtotal.testCases.TC_Login_DataDriven_002</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">SetUp(chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">ValidateLogin</span>
-                <span class="method-start">26670 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">loginDD(null, null)</span>
+                <span class="method-start">7927 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">loginDD(User1, p)</span>
+                <span class="method-start">16486 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">loginDD(User2, p)</span>
+                <span class="method-start">17274 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">loginDD(User3, p)</span>
+                <span class="method-start">18021 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">loginDD(User4, p)</span>
+                <span class="method-start">19548 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">TearDown</span>
-                <span class="method-start">50455 ms</span>
+                <span class="method-start">20268 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
