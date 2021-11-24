@@ -4,20 +4,17 @@
   <test thread-count="5" name="Sanity(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.Sumtotal.testCases.TC_Login_DataDriven_002">
-        <methods>
-          <include name="loginDD" invocation-numbers="0 1 2 3 4"/>
-          <include name="TearDown"/>
-          <include name="SetUp"/>
-        </methods>
-      </class> <!-- com.Sumtotal.testCases.TC_Login_DataDriven_002 -->
-      <class name="com.Sumtotal.testCases.TC_Login_001">
+      <class name="com.Sumtotal.testCases.TC_NaukriProfileUpdate_003">
+        <parameter name="baseUrl" value="https://www.naukri.com/mnjuser/profile"/>
+        <parameter name="Username" value="venkey402@gmail.com"/>
+        <parameter name="Password" value="9030196907"/>
         <methods>
           <include name="TearDown"/>
+          <include name="UpdatingNaukriProfile"/>
+          <include name="SetupNaukri"/>
           <include name="SetUp"/>
-          <include name="ValidateLogin"/>
         </methods>
-      </class> <!-- com.Sumtotal.testCases.TC_Login_001 -->
+      </class> <!-- com.Sumtotal.testCases.TC_NaukriProfileUpdate_003 -->
     </classes>
   </test> <!-- Sanity(failed) -->
 </suite> <!-- Failed suite [Sumtoal] -->

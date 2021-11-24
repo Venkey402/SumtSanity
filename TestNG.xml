@@ -4,8 +4,13 @@
 	<test name = "Sanity">	
 		<parameter name="browser" value = "chrome"/>
 		<classes>
-			<class name = "com.Sumtotal.testCases.TC_Login_001"/>
-			<class name = "com.Sumtotal.testCases.TC_Login_DataDriven_002"/> 
+			<!-- <class name = "com.Sumtotal.testCases.TC_Login_001"/> 
+			<class name = "com.Sumtotal.testCases.TC_Login_DataDriven_002"/>  -->			
+			<class name = "com.Sumtotal.testCases.TC_NaukriProfileUpdate_003">
+				<parameter name="baseUrl" value = "https://www.naukri.com/mnjuser/profile"/>
+				<parameter name="Username" value = "venkey402@gmail.com"/>
+				<parameter name="Password" value = "9030196907"/>
+			</class>
 		</classes>	
 	</test>
 </suite>
