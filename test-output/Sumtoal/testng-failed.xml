@@ -11,6 +11,13 @@
           <include name="SetUp"/>
         </methods>
       </class> <!-- com.Sumtotal.testCases.TC_Login_DataDriven_002 -->
+      <class name="com.Sumtotal.testCases.TC_Login_001">
+        <methods>
+          <include name="TearDown"/>
+          <include name="SetUp"/>
+          <include name="ValidateLogin"/>
+        </methods>
+      </class> <!-- com.Sumtotal.testCases.TC_Login_001 -->
     </classes>
   </test> <!-- Sanity(failed) -->
 </suite> <!-- Failed suite [Sumtoal] -->

@@ -4,7 +4,6 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import com.Sumtotal.PageObjects.LoginPage;
 
-
 public class TC_Login_001 extends BaseClass{
 	
   @Test
