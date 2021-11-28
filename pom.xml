@@ -31,7 +31,7 @@
 				<configuration>
 					<suiteXmlFiles>
 						<!-- TestNG suite XML files -->
-						<suiteXmlFile>testng.xml</suiteXmlFile>
+						<suiteXmlFile>testng-failed.xml</suiteXmlFile>
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>		

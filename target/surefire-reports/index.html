@@ -24,23 +24,23 @@
   <body>
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
-      <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
       <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
         <span>All suites</span>
-        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
-          <img class="collapse-all-icon" src="collapseall.gif">
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
           </img> <!-- collapse-all-icon -->
         </a> <!-- collapse-all-link -->
       </div> <!-- navigator-suite-header -->
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" class="navigator-link" panel-name="suite-Sumtoal">
-              <span class="suite-name border-passed">Sumtoal</span>
+            <a href="#" panel-name="suite-Failed_suite__Sumtoal_" class="navigator-link">
+              <span class="suite-name border-skipped">Failed suite [Sumtoal]</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,37 +50,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="test-xml-Sumtoal">
-                    <span>C:\Users\venkatm\eclipse-workspace\Sumtotal\TestNG.xml</span>
+                  <a href="#" panel-name="test-xml-Failed_suite__Sumtoal_" class="navigator-link ">
+                    <span>C:\Users\venkatm\eclipse-workspace\Sumtotal\testng-failed.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="testlist-Sumtoal">
+                  <a href="#" panel-name="testlist-Failed_suite__Sumtoal_" class="navigator-link ">
                     <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="group-Sumtoal">
+                  <a href="#" panel-name="group-Failed_suite__Sumtoal_" class="navigator-link ">
                     <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="times-Sumtoal">
+                  <a href="#" panel-name="times-Failed_suite__Sumtoal_" class="navigator-link ">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="reporter-Sumtoal">
+                  <a href="#" panel-name="reporter-Failed_suite__Sumtoal_" class="navigator-link ">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="ignored-methods-Sumtoal">
+                  <a href="#" panel-name="ignored-methods-Failed_suite__Sumtoal_" class="navigator-link ">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="chronological-Sumtoal">
+                  <a href="#" panel-name="chronological-Failed_suite__Sumtoal_" class="navigator-link ">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -93,21 +93,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">1 method,  1 skipped,  </span>
                   </li>
                   <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Sumtoal" class="hide-methods passed suite-Sumtoal"> (hide)</a> <!-- hide-methods passed suite-Sumtoal -->
-                      <a href="#" panel-name="suite-Sumtoal" class="show-methods passed suite-Sumtoal"> (show)</a> <!-- show-methods passed suite-Sumtoal -->
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Failed_suite__Sumtoal_" class="hide-methods skipped suite-Failed_suite__Sumtoal_"> (hide)</a> <!-- hide-methods skipped suite-Failed_suite__Sumtoal_ -->
+                      <a href="#" panel-name="suite-Failed_suite__Sumtoal_" class="show-methods skipped suite-Failed_suite__Sumtoal_"> (show)</a> <!-- show-methods skipped suite-Failed_suite__Sumtoal_ -->
                     </span>
-                    <div class="method-list-content passed suite-Sumtoal">
+                    <div class="method-list-content skipped suite-Failed_suite__Sumtoal_">
                       <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Sumtoal" title="com.Sumtotal.testCases.TC_Login_001" hash-for-method="ValidateLogin">ValidateLogin</a> <!-- method navigator-link -->
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Failed_suite__Sumtoal_" title="com.Sumtotal.testCases.TC_NaukriProfileUpdate_003" class="method navigator-link" hash-for-method="UpdatingNaukriProfile">UpdatingNaukriProfile</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Sumtoal -->
+                    </div> <!-- method-list-content skipped suite-Failed_suite__Sumtoal_ -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -118,70 +118,98 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-Sumtoal" class="panel Sumtoal">
-          <div class="suite-Sumtoal-class-passed">
+        <div panel-name="suite-Failed_suite__Sumtoal_" class="panel Failed_suite__Sumtoal_">
+          <div class="suite-Failed_suite__Sumtoal_-class-skipped">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.Sumtotal.testCases.TC_Login_001</span>
+              <img src="skipped.png"/>
+              <span class="class-name">com.Sumtotal.testCases.TC_NaukriProfileUpdate_003</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="ValidateLogin">
-                  </a> <!-- ValidateLogin -->
-                  <span class="method-name">ValidateLogin</span>
+                  <a name="UpdatingNaukriProfile">
+                  </a> <!-- UpdatingNaukriProfile -->
+                  <span class="method-name">UpdatingNaukriProfile</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: unknown error: net::ERR_INTERNET_DISCONNECTED
+  (Session info: chrome=96.0.4664.45)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;VENKATM3IN&apos;, ip: &apos;127.0.0.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 95.0.4638.17 (a9d0719444d4b..., userDataDir: C:\Users\venkatm\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:49811}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b014d58405f4bb2722c01632e446b22a
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at com.Sumtotal.testCases.BaseClass.SetUp(BaseClass.java:55)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Sumtoal-class-passed -->
-        </div> <!-- panel Sumtoal -->
-        <div panel-name="test-xml-Sumtoal" class="panel">
+          </div> <!-- suite-Failed_suite__Sumtoal_-class-skipped -->
+        </div> <!-- panel Failed_suite__Sumtoal_ -->
+        <div panel-name="test-xml-Failed_suite__Sumtoal_" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\venkatm\eclipse-workspace\Sumtotal\TestNG.xml</span>
+            <span class="header-content">C:\Users\venkatm\eclipse-workspace\Sumtotal\testng-failed.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;Sumtoal&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;Sanity&quot;&gt;
+&lt;suite name=&quot;Failed suite [Sumtoal]&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Sanity(failed)&quot; verbose=&quot;0&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.Sumtotal.testCases.TC_Login_001&quot;/&gt;
+      &lt;class name=&quot;com.Sumtotal.testCases.TC_NaukriProfileUpdate_003&quot;&gt;
+        &lt;parameter name=&quot;baseUrl&quot; value=&quot;https://www.naukri.com/mnjuser/profile&quot;/&gt;
+        &lt;parameter name=&quot;Username&quot; value=&quot;venkey402@gmail.com&quot;/&gt;
+        &lt;parameter name=&quot;Password&quot; value=&quot;9030196907&quot;/&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;TearDown&quot;/&gt;
+          &lt;include name=&quot;UpdatingNaukriProfile&quot;/&gt;
+          &lt;include name=&quot;SetupNaukri&quot;/&gt;
+          &lt;include name=&quot;SetUp&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.Sumtotal.testCases.TC_NaukriProfileUpdate_003 --&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Sanity --&gt;
-&lt;/suite&gt; &lt;!-- Sumtoal --&gt;
+  &lt;/test&gt; &lt;!-- Sanity(failed) --&gt;
+&lt;/suite&gt; &lt;!-- Failed suite [Sumtoal] --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-Sumtoal" class="panel">
+        <div panel-name="testlist-Failed_suite__Sumtoal_" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for Sumtoal</span>
+            <span class="header-content">Tests for Failed suite [Sumtoal]</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Sanity (1 class)</span>
+                <span class="test-name">Sanity(failed) (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-Sumtoal" class="panel">
+        <div panel-name="group-Failed_suite__Sumtoal_" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for Sumtoal</span>
+            <span class="header-content">Groups for Failed suite [Sumtoal]</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-Sumtoal" class="panel">
+        <div panel-name="times-Failed_suite__Sumtoal_" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for Sumtoal</span>
+            <span class="header-content">Times for Failed suite [Sumtoal]</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_Sumtoal');
-function tableData_Sumtoal() {
+suiteTableInitFunctions.push('tableData_Failed_suite__Sumtoal_');
+function tableData_Failed_suite__Sumtoal_() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
@@ -189,51 +217,57 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'ValidateLogin')
-data.setCell(0, 2, 'com.Sumtotal.testCases.TC_Login_001')
-data.setCell(0, 3, 28368);
-window.suiteTableData['Sumtoal']= { tableData: data, tableDiv: 'times-div-Sumtoal'}
+data.setCell(0, 1, 'UpdatingNaukriProfile')
+data.setCell(0, 2, 'com.Sumtotal.testCases.TC_NaukriProfileUpdate_003')
+data.setCell(0, 3, 0);
+window.suiteTableData['Failed_suite__Sumtoal_']= { tableData: data, tableDiv: 'times-div-Failed_suite__Sumtoal_'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 28 seconds</span>
-              <div id="times-div-Sumtoal">
-              </div> <!-- times-div-Sumtoal -->
+              <span class="suite-total-time">Total running time: 0 ms</span>
+              <div id="times-div-Failed_suite__Sumtoal_">
+              </div> <!-- times-div-Failed_suite__Sumtoal_ -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-Sumtoal" class="panel">
+        <div panel-name="reporter-Failed_suite__Sumtoal_" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for Sumtoal</span>
+            <span class="header-content">Reporter output for Failed suite [Sumtoal]</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-Sumtoal" class="panel">
+        <div panel-name="ignored-methods-Failed_suite__Sumtoal_" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-Sumtoal" class="panel">
+        <div panel-name="chronological-Failed_suite__Sumtoal_" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.Sumtotal.testCases.TC_Login_001</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.Sumtotal.testCases.TC_NaukriProfileUpdate_003</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">SetUp(chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">SetupNaukri</span>
+                <span class="method-start">2512 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">ValidateLogin</span>
-                <span class="method-start">11497 ms</span>
+                <span class="method-name">UpdatingNaukriProfile</span>
+                <span class="method-start">2513 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">TearDown</span>
-                <span class="method-start">39869 ms</span>
+                <span class="method-start">2514 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

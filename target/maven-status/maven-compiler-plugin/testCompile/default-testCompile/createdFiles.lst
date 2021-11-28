@@ -1,0 +1,8 @@
+com\Sumtotal\testCases\BaseClass.class
+com\Sumtotal\Utilities\ReadXls.class
+com\Sumtotal\PageObjects\LoginPage.class
+com\Sumtotal\testCases\TC_Login_DataDriven_002.class
+com\Sumtotal\testCases\TC_Login_001.class
+com\Sumtotal\Utilities\ReadConfig.class
+com\Sumtotal\testCases\TC_NaukriProfileUpdate_003.class
+com\Sumtotal\PageObjects\Naukri_Login.class
