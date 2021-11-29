@@ -1,20 +1,26 @@
 package com.Sumtotal.testCases;
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
 
 public class Naukri_ProfileUpdate {
 
-	public static void main(String[] args) throws InterruptedException {
-		
-		 System.setProperty("webdriver.chrome.driver", "C:\\eclipse\\Drivers\\Chrome\\chromedriver.exe");  
+	@Test
+		public void naukri() throws InterruptedException
+		{
+		 System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"\\Drivers\\chromedriver.exe");
 		 ChromeDriver driver = new ChromeDriver();	
+		 driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		 driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
 		 driver.navigate().to("https://www.naukri.com/mnjuser/profile?id=&altresid");		 
 		 driver.manage().window().maximize(); 
-		 Thread.sleep(10000);		
+		 	
 		 driver.findElement(By.id("usernameField")).sendKeys("venkey402@gmail.com");
 		 driver.findElement(By.id("passwordField")).sendKeys("9030196907");
 		 driver.findElement(By.xpath("//button[text()='Login']")).click();
-		 Thread.sleep(5000);
+		 
 		 String str = "9.5 Years experience in automation testing, manual testing and API testing.";
 		 String str_withSpace = "9.5 Years experience in automation testing, manual testing and API testing .";
 		 
