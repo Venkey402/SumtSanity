@@ -52,15 +52,12 @@ public class LinkedIn {
 			js.executeScript("window.scrollBy(0,900)", "");
 			Thread.sleep(5000);
 			Company_p=driver.findElements(By.xpath("//*[text()='Company Name']/following-sibling::p"));
-			//System.out.println("Company_p "+Company_p.size());
 			Company_span=driver.findElements(By.xpath("//*[text()='Company Name']/following-sibling::span"));	
-			//System.out.println("Company_Span "+Company_span.size());
 			Company_Elements.addAll(Company_p);
 			Company_Elements.addAll(Company_span);			
 			
 			for(WebElement c:Company_Elements)
 			{
-				//System.out.println("Text :"+c.getText());
 				CompanyName.add(c.getText());
 			}						
 		}
