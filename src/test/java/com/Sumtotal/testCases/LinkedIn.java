@@ -27,9 +27,7 @@ public class LinkedIn {
 		
 		ArrayList<String> links = new ArrayList<String>();
 		ArrayList<String> CompanyName = new ArrayList<String>();
-		List<String> CompanyName_Sorted = new ArrayList<String>();
-		
-		
+		List<String> CompanyName_Sorted = new ArrayList<String>();		
 		
 		for(int i=1;i<2;i++)
 		{
@@ -41,8 +39,7 @@ public class LinkedIn {
 				String url = e.getAttribute("href");
 				links.add(url);
 			}			
-		}	
-		
+		}		
 		
 		for(String u:links)
 		{
@@ -65,8 +62,7 @@ public class LinkedIn {
 			{
 				//System.out.println("Text :"+c.getText());
 				CompanyName.add(c.getText());
-			}	
-					
+			}						
 		}
 		
 		CompanyName_Sorted=CompanyName.stream().sorted().toList();
