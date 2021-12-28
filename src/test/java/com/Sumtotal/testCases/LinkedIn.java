@@ -3,9 +3,6 @@ package com.Sumtotal.testCases;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
-import java.util.stream.Collectors;
-
-import org.jsoup.select.Collector;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -25,11 +22,11 @@ public class LinkedIn {
 		driver.findElement(By.id("session_password")).sendKeys("9030196907");
 		driver.findElement(By.xpath("//button[@class='sign-in-form__submit-button']")).click();
 		
-		ArrayList<String> links = new ArrayList<String>();
+		ArrayList<String> Connection_links = new ArrayList<String>();
 		ArrayList<String> CompanyName = new ArrayList<String>();
 		List<String> CompanyName_Sorted = new ArrayList<String>();		
 		
-		for(int i=1;i<2;i++)
+		for(int i=1;i<21;i++)
 		{
 			driver.get("https://www.linkedin.com/search/results/people/?network=%5B%22F%22%5D&origin=MEMBER_PROFILE_CANNED_SEARCH&page="+i);		
 			List<WebElement> Pageconnections= driver.findElements(By.xpath("//div[@class='entity-result__item']/div/div/div/div/span/span/a"));
@@ -37,11 +34,11 @@ public class LinkedIn {
 			for(WebElement e:Pageconnections)
 			{
 				String url = e.getAttribute("href");
-				links.add(url);
+				Connection_links.add(url);
 			}			
 		}		
 		
-		for(String u:links)
+		for(String u:Connection_links)
 		{
 			driver.get(u);
 			List<WebElement> Company_p = new ArrayList<WebElement>();
